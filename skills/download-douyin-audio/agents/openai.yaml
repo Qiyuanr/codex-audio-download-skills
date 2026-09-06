@@ -1,0 +1,7 @@
+interface:
+  display_name: "抖音最高音质音频下载"
+  short_description: "从一个抖音视频链接下载并保存最高可用的原始质量音轨"
+  default_prompt: "Use $download-douyin-audio to download the highest available source-quality audio from this Douyin link."
+
+policy:
+  allow_implicit_invocation: true

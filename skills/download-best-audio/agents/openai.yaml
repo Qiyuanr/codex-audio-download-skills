@@ -1,0 +1,7 @@
+interface:
+  display_name: "最高音质音频下载"
+  short_description: "从抖音、B站或 YouTube 链接保存最佳可用源音轨"
+  default_prompt: "Use $download-best-audio to extract the highest available source-quality audio from this link."
+
+policy:
+  allow_implicit_invocation: false

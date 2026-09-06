@@ -1,0 +1,7 @@
+interface:
+  display_name: "YouTube 最高音质音频下载"
+  short_description: "从一个 YouTube 视频链接下载并保存最高可用的原始质量音轨"
+  default_prompt: "Use $download-youtube-audio to download the highest available source-quality audio from this YouTube link."
+
+policy:
+  allow_implicit_invocation: true

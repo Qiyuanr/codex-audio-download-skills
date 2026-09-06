@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Secrets and browser data
+.env
+.env.*
+!.env.example
+cookies*.txt
+*Cookies*
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Download artifacts
+Downloads/
+output/
+outputs/
+*.part
+*.ytdl
+.download-best-audio-*
+*.mp3
+*.m4a
+*.aac
+*.opus
+*.ogg
+*.oga
+*.webm
+*.mp4
+*.mkv
+*.mov
+*.flac
+*.wav
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
