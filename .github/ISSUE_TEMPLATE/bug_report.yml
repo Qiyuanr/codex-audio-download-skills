@@ -1,0 +1,95 @@
+name: Bug report
+description: Report a reproducible, sanitized failure or compatibility regression.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the project. Do not include real private media, cookies, tokens, signed URLs, usernames, or personal paths. Security-sensitive reports belong in the private channel described in SECURITY.md.
+  - type: checkboxes
+    id: authorization
+    attributes:
+      label: Authorization and scope
+      options:
+        - label: I am authorized to access and process the content used to reproduce this issue.
+          required: true
+        - label: This report does not request bypassing DRM, a paywall, account entitlement, or a region restriction.
+          required: true
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Affected Skill
+      options:
+        - download-bilibili-audio
+        - download-douyin-audio
+        - download-youtube-audio
+        - download-best-audio
+        - Packaging or installation
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation method
+      options:
+        - Repository plugin marketplace
+        - Repository-scoped .agents/skills
+        - User-scoped .agents/skills
+        - Direct script invocation
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Sanitized environment
+      description: Include OS, Codex surface, Python, yt-dlp, FFmpeg/FFprobe, and Deno versions where relevant.
+      placeholder: |
+        OS: Windows 11
+        Surface: Codex CLI
+        Python: 3.12.x
+        yt-dlp: YYYY.MM.DD
+        FFmpeg / FFprobe: major.minor
+        Deno: major.minor
+    validations:
+      required: true
+  - type: input
+    id: error_code
+    attributes:
+      label: Error code
+      description: Paste only the structured error_code. Write "none" if no code was returned.
+      placeholder: dependency_missing
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal sanitized reproduction
+      description: Replace every URL, identifier, title, username, and path with a fictional placeholder.
+      placeholder: |
+        1. Started a new session after installation.
+        2. Asked to download one authorized test clip.
+        3. The Skill returned the error code above.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: Describe the result you expected without including private content.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Additional sanitized diagnostics
+      description: Optional. Include only the safe JSON fields or a short redacted excerpt, never a full raw debug log.
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed cookies, tokens, signed URLs, media, real titles, usernames, absolute paths, and browser-profile details.
+          required: true

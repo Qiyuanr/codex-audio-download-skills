@@ -1,0 +1,39 @@
+{
+  "name": "codex-audio-download-skills",
+  "version": "0.1.0",
+  "description": "Explicit, source-aware audio extraction Skills for one authorized Bilibili, Douyin, or YouTube video.",
+  "author": {
+    "name": "Yuan Says AI",
+    "url": "https://github.com/Qiyuanr"
+  },
+  "homepage": "https://github.com/Qiyuanr/codex-audio-download-skills",
+  "repository": "https://github.com/Qiyuanr/codex-audio-download-skills",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "audio",
+    "bilibili",
+    "douyin",
+    "youtube"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Yuan Says AI Audio Download Skills",
+    "shortDescription": "Safe audio extraction for three video platforms",
+    "longDescription": "Route explicit audio-download requests to a platform-specific Skill, preserve the best available source codec, and verify the audio-only result.",
+    "developerName": "Yuan Says AI",
+    "category": "Productivity",
+    "capabilities": [
+      "Route explicit audio-download requests",
+      "Preserve the best available source codec",
+      "Verify audio-only output with FFprobe"
+    ],
+    "websiteURL": "https://github.com/Qiyuanr/codex-audio-download-skills",
+    "defaultPrompt": [
+      "Download audio from this authorized Bilibili video.",
+      "Extract audio from this authorized Douyin video.",
+      "Download audio from this authorized YouTube video."
+    ],
+    "brandColor": "#0B1739"
+  }
+}

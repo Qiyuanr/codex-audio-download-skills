@@ -1,0 +1,52 @@
+name: Feature request
+description: Suggest a focused improvement that stays within the project's safety boundary.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the user problem before proposing an implementation. Do not include real private media, credentials, signed URLs, or personal paths.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Who has the problem, and what authorized workflow is blocked today?
+      placeholder: When using an authorized self-generated clip, I need...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the smallest useful change and the expected user-visible result.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include existing platform download/export features or current project workarounds where relevant.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Primary surface
+      options:
+        - ChatGPT desktop app
+        - Codex CLI
+        - Codex IDE extension
+        - Direct Python runtime
+        - Packaging or documentation
+        - Not sure
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Project boundary
+      options:
+        - label: The request keeps explicit user intent and processes no more than one published video per invocation.
+          required: true
+        - label: The request does not bypass DRM, payment, account entitlement, or region restrictions.
+          required: true
+        - label: The request can be tested with mocks, fictional data, or self-generated media.
+          required: true

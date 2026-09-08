@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/Qiyuanr/codex-audio-download-skills/security/advisories/new
+    about: Use GitHub private vulnerability reporting if available; never post sensitive details publicly.

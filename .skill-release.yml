@@ -1,0 +1,5 @@
+max_file_bytes: 10485760
+allow:
+  - path: docs/assets/demo.gif
+    sha256: 811ddaea13f6f6474fc2a51b56ed697f0350a36101f8fbe1251df8d7b8af5ca9
+    reason: Generated from fictional demo frames; contains no real media or private data.

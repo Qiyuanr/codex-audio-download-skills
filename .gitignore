@@ -6,6 +6,7 @@ __pycache__/
 htmlcov/
 .venv/
 venv/
+.asset-build/
 
 # Secrets and browser data
 .env
