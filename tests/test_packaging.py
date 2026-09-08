@@ -141,7 +141,7 @@ class SkillPackagingTests(unittest.TestCase):
         for prompt in manifest["interface"]["defaultPrompt"]:
             self.assertLessEqual(len(prompt), 128)
 
-        self.assertEqual(marketplace["name"], "yuan-says-ai")
+        self.assertEqual(marketplace["name"], "yuan-says-ai-audio")
         self.assertEqual(len(marketplace["plugins"]), 1)
         entry = marketplace["plugins"][0]
         self.assertEqual(entry["name"], manifest["name"])
@@ -163,7 +163,7 @@ class SkillPackagingTests(unittest.TestCase):
             self.assertIn(".agents/plugins/marketplace.json", text)
             self.assertIn("codex plugin marketplace add", text)
             self.assertIn("--ref v0.1.0", text)
-            self.assertIn("codex-audio-download-skills@yuan-says-ai", text)
+            self.assertIn("codex-audio-download-skills@yuan-says-ai-audio", text)
             self.assertIn("plugins/codex-audio-download-skills/skills/", text)
             self.assertNotIn("--ref main", text)
 

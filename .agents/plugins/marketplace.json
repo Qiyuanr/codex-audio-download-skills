@@ -1,7 +1,7 @@
 {
-  "name": "yuan-says-ai",
+  "name": "yuan-says-ai-audio",
   "interface": {
-    "displayName": "Yuan Says AI"
+    "displayName": "Yuan Says AI Audio Skills"
   },
   "plugins": [
     {

@@ -68,7 +68,7 @@ The repository contains a canonical plugin at `plugins/codex-audio-download-skil
 
 ```bash
 codex plugin marketplace add Qiyuanr/codex-audio-download-skills --ref v0.1.0
-codex plugin add codex-audio-download-skills@yuan-says-ai
+codex plugin add codex-audio-download-skills@yuan-says-ai-audio
 ```
 
 Start a new Codex session after installation. The marketplace loads the plugin through the local, repository-relative path `./plugins/codex-audio-download-skills`. This is a repository marketplace, not a listing in OpenAI's universal public Plugins Directory. The commands above will work after the `v0.1.0` tag is published; review the source before installing.

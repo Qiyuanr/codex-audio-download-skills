@@ -68,7 +68,7 @@ deno --version
 
 ```bash
 codex plugin marketplace add Qiyuanr/codex-audio-download-skills --ref v0.1.0
-codex plugin add codex-audio-download-skills@yuan-says-ai
+codex plugin add codex-audio-download-skills@yuan-says-ai-audio
 ```
 
 安装后开始一个新的 Codex 会话。marketplace 通过仓库相对路径 `./plugins/codex-audio-download-skills` 加载插件。这是仓库 marketplace，并不表示项目已经进入 OpenAI 通用公共 Plugins Directory。以上命令会在 `v0.1.0` 标签发布后生效；安装前请自行审查源码。

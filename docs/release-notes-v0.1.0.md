@@ -29,7 +29,7 @@ Repository marketplace:
 
 ```bash
 codex plugin marketplace add Qiyuanr/codex-audio-download-skills --ref v0.1.0
-codex plugin add codex-audio-download-skills@yuan-says-ai
+codex plugin add codex-audio-download-skills@yuan-says-ai-audio
 ```
 
 The root marketplace loads the plugin from local source `./plugins/codex-audio-download-skills`. Standalone installation: copy all four directories under `plugins/codex-audio-download-skills/skills/` into either `<repo-root>/.agents/skills/` or `$HOME/.agents/skills/`, then start a new session.
